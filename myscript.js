@@ -33,7 +33,7 @@
         userBio.textContent = data.bio
         // user
       })  
-   }
+    }
 
     userGithubProfile()
         
