@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SEMANA NLW - ORIGIN</title>
   <link rel="stylesheet" href="style.css">
-
+  
   </style>
 </head>
 
@@ -23,54 +23,27 @@
       <h1 id="userName">Ozieni Costa</h1>
       <a href="https://github.com/ozicosta" target="_blank">
         <img src="images/github 2.svg" alt="github"> ozicosta</a>
-        <p>
-          Developer fullstack </br>Semana NLW 5ª edição 2021
-        </p>
+      <p id="userBio">
+        Developer fullstack </br>Semana NLW 5ª edição 2021
+      </p>
 
-        <ul id="socialLinks">
-          <li class="youtube"><a href="https://youtube.com" target="_blank">
-            <img src="images/youtube.svg" alt="youtube" ></a></li>
+      <ul id="socialLinks">
+        <li class="youtube"><a href="https://youtube.com" target="_blank">
+            <img src="images/youtube.svg" alt="youtube"></a></li>
 
-          <li class="twitter"><a href="https://twitter.com">
+        <li class="twitter"><a href="https://twitter.com">
             <img src="images/twitter.svg" alt="twitter"></a></li>
 
-          <li class="facebook"><a href="https://facebook.com" target="_blank">
+        <li class="facebook"><a href="https://facebook.com" target="_blank">
             <img src="images/facebook.svg" alt="facebook"></a></li>
 
-          <li class="instagram"><a href="https://instagram.com" target="_blank">
+        <li class="instagram"><a href="https://instagram.com" target="_blank">
             <img src="images/instagram.svg" alt="instagram"></a></li>
-        </ul>
+      </ul>
 
     </div>
   </main>
-        <script>
-          //camelCase / PascalCase / snake_case --> boa práticas p nomes de variáveis
-          const userSocialMedia = { //Cria de objeto
-              github:'ozicosta',
-              instagram: 'ozieni_costa'
-          }
-
-          function mudarLinkRedeSocial() {
-             // document.getElementById('userName'). // -> uma das formas para alterar valor no html usando Id
-            // textContent='Ozi Costa'
-
-             //userName.textContent = 'Ozii Costa' //forma simplificada para alterar valor dentro do html
-
-             for(let li of socialLinks.children){
-               // alert(li.getAttribute('class')) ou -->
-                const social = li.getAttribute('class')
-                // alert(social)
-
-                li.children[0].href = `https://www.${social}.com/${userSocialMedia[social]}`
-
-                alert(li.children[0].href)
-             }
-          }
-          mudarLinkRedeSocial()
-           
-
-        </script>
-
+  <script src="myscript.js"></script>
 </body>
 
 </html>
