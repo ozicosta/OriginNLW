@@ -1,7 +1,7 @@
  //camelCase / PascalCase / snake_case --> boa práticas p nomes de variáveis
 
    const userSocialMedia = { //Cria de objeto
-      //  github:'ozicosta',
+       github:'ozicosta',
        instagram: 'ozieni_costa'
      }
 
@@ -31,7 +31,6 @@
       .then(data => {
         userName.textContent = data.name
         userBio.textContent = data.bio
-        // user
       })  
     }
 
