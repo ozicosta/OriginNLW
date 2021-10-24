@@ -1,6 +1,6 @@
  //camelCase / PascalCase / snake_case --> boa práticas p nomes de variáveis
 
-   const userSocialMedia = { //Cria de objeto
+   const userSocialMedia = { //Cria objeto
        github:'ozicosta',
        instagram: 'ozieni_costa'
      }
